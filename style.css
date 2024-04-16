@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("images/background.jpg");
+    background-position: left center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+    position: relative;
+}
+.main .box{
+    position: absolute;
+    top: 0;
+    height: 700px;
+    width: 100%;
+    opacity: 0.60;
+    background-color: black;
+}
+nav{
+    padding: 40px 0px;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+}
+
+nav img{
+    color: red;
+    width: 140px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.Watch{
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 52px);
+    gap: 20px;
+    padding: 23px;
+}
+.Watch .Head{
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+.Watch> :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.Watch .ready-to-watch{
+    font-size: 20px;
+    font-family: 400;
+    text-align: center;
+}
+.Watch-button{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.Watch input{
+    background-color: rgba(0, 0, 0, 0.541);
+    font-size: 16px;
+    padding: 12px 150px 12px 17px;
+    font-weight: 400;
+    color: white;
+    border-radius: 4px;
+}
+.button{
+    padding: 5px 15px;
+    font-family: sans-serif;
+    background-color: black;
+    font-weight: 500;
+    color: white;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button-red-sign{
+    margin-left: 20px; 
+    padding: 5px 12px;
+    background-color: rgb(216, 41, 41);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.button-red{
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgb(222, 23, 23);
+    color: white;
+}
+.line{
+    border-bottom: 8px solid rgba(158, 147, 147, 0.242);
+}
+.container{
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-third-box{
+    display: flex;
+    justify-content: center;
+    max-width: 72vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px){
+    .container{
+        height: 600px;
+    }
+    .first-third-box{
+        text-align: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .written-side .title{
+        font-size: 32px;
+    }
+    .written-side .sub-title{
+        font-size: 18px;
+    }
+    .second-fourth-box{
+        text-align: center;
+        flex-wrap: wrap-reverse;
+    }
+}
+
+.box-image{
+    position: relative;
+}
+.box-image .tv-image{
+    width: 520px;
+    position: relative;
+    z-index: 10;
+}
+.box-image .tv-video{
+    width: 380px;
+    position: absolute;
+    top: 80px;
+    left: 70px;
+}
+.written-side{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+.sub-title{
+    font-size: 24px;
+    font-weight: 400;
+}
+.box-image .video-device{
+    position: absolute;
+    width: 320px;
+    top: 40px;
+    right: 100px;
+}
+.second-fourth-box{
+    display: flex;
+    justify-content: center;
+    max-width: 74vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+.phone{
+    width: 560px;
+    display: flex;
+    position: relative;
+}
+.phone-description{
+    background-color: black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    max-width: 310px;
+    margin: auto;
+    height: 13vh;
+    border: 1px solid gray;
+    border-radius: 8px;
+    bottom: 20px;
+    left: 125px;
+}
+.stranger-things{
+    width: 60px;
+    margin: 10px;
+}
+.phone-description .middle-part{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.middle-part :nth-child(2){
+    color: blue;
+}
+.download-icon{
+    width: 60px;
+    padding-left: 10px;
+}
+.children{
+    width: 560px;
+    display: flex;
+}
+.faq{
+    padding: 55px;
+}
+
+.faq title{
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+}
+.faq-box span{
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.faq-box{
+    cursor: pointer;
+    background-color: rgba(158, 147, 147, 0.242);
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 25px;
+    margin-bottom: 10px;
+    transition: all 0.10s;
+}
+.faq-box:hover{
+    background-color: rgba(128, 128, 128, 0.442);
+}
+footer{
+    color: rgba(255, 255, 255, 0.511);
+    max-width: 75vw;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+footer .question{
+    padding-bottom: 20px;
+}
+.question a{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.511);
+}
+.footer a{
+    color: rgba(255, 255, 255, 0.511);
+    font-size: 14px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 900px) {
+    .main{
+        background-size: 1300px;
+    }
+    .Watch .Head{
+        font-size: 36px;
+    }
+    .Watch-button{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .phone,.children{
+      width: 500px; 
+    }
+    .phone-description{
+        max-width: 260px;
+    }
+    .box-image .tv-image{
+        width: 450px;
+    }
+    .box-image .video-device{
+        width: 280px;
+    }
+    .faq title{
+        font-size: 32px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+footer .last-line{
+    margin-top: 20px;
+}
